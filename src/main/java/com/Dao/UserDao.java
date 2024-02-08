@@ -23,9 +23,7 @@ public class UserDao {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcpassword);
-            System.out.println("Here in connection"+connection);
         } catch (ClassNotFoundException | SQLException e) {
-            System.out.println("Here in connection in exception"+e);
             throw new RuntimeException(e);
         }
         return connection;
@@ -45,7 +43,7 @@ public class UserDao {
     }
 
 
-    public User selectUser(int id) {
+    public User getUser(int id) {
         User user = null;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID)) {

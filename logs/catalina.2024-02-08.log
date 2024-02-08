@@ -302,3 +302,85 @@
 08-Feb-2024 22:54:09.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/Users/sumandey/Documents/servlets/projects/StudentManagement/conf/Catalina/localhost/StudentManagement.xml] has finished in [497] ms
 08-Feb-2024 22:54:09.590 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 08-Feb-2024 22:54:09.595 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [526] milliseconds
+08-Feb-2024 23:57:09.798 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:57:09.806 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Feb-2024 23:57:09.847 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [StudentManagement] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-Feb-2024 23:57:09.848 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [StudentManagement] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/java.lang.Object.wait(Native Method)
+ java.base@17.0.10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:840)
+08-Feb-2024 23:57:09.872 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:57:09.881 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:57:12.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+08-Feb-2024 23:57:12.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+08-Feb-2024 23:57:12.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+08-Feb-2024 23:57:12.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Feb-2024 23:57:12.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            14.2.1
+08-Feb-2024 23:57:12.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+08-Feb-2024 23:57:12.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/sumandey/Library/Java/JavaVirtualMachines/corretto-17.0.10/Contents/Home
+08-Feb-2024 23:57:12.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.10+7-LTS
+08-Feb-2024 23:57:12.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+08-Feb-2024 23:57:12.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/sumandey/Documents/servlets/projects/StudentManagement
+08-Feb-2024 23:57:12.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/sumandey/Documents/servlets/tomcat/apache-tomcat-10.1.18
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/sumandey/Documents/servlets/tomcat/apache-tomcat-10.1.18
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/sumandey/Documents/servlets/projects/StudentManagement
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/sumandey/Documents/servlets/projects/StudentManagement/temp
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/sumandey/Documents/servlets/projects/StudentManagement/conf/logging.properties
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=57676:/Applications/IntelliJ IDEA CE.app/Contents/bin
+08-Feb-2024 23:57:12.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+08-Feb-2024 23:57:12.442 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/sumandey/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Feb-2024 23:57:12.647 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:57:12.674 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [345] milliseconds
+08-Feb-2024 23:57:12.705 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Feb-2024 23:57:12.705 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+08-Feb-2024 23:57:12.712 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/Users/sumandey/Documents/servlets/projects/StudentManagement/conf/Catalina/localhost/StudentManagement.xml]
+08-Feb-2024 23:57:13.192 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Feb-2024 23:57:13.211 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/Users/sumandey/Documents/servlets/projects/StudentManagement/conf/Catalina/localhost/StudentManagement.xml] has finished in [499] ms
+08-Feb-2024 23:57:13.213 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:57:13.218 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [544] milliseconds
+08-Feb-2024 23:58:03.855 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:58:03.858 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Feb-2024 23:58:03.874 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:58:03.881 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:58:05.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            14.2.1
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/sumandey/Library/Java/JavaVirtualMachines/corretto-17.0.10/Contents/Home
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.10+7-LTS
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/sumandey/Documents/servlets/projects/StudentManagement
+08-Feb-2024 23:58:05.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/sumandey/Documents/servlets/tomcat/apache-tomcat-10.1.18
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/sumandey/Documents/servlets/tomcat/apache-tomcat-10.1.18
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/sumandey/Documents/servlets/projects/StudentManagement
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/sumandey/Documents/servlets/projects/StudentManagement/temp
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/sumandey/Documents/servlets/projects/StudentManagement/conf/logging.properties
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=57693:/Applications/IntelliJ IDEA CE.app/Contents/bin
+08-Feb-2024 23:58:05.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+08-Feb-2024 23:58:05.710 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/sumandey/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Feb-2024 23:58:05.887 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:58:05.948 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [355] milliseconds
+08-Feb-2024 23:58:05.999 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Feb-2024 23:58:05.999 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+08-Feb-2024 23:58:06.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/Users/sumandey/Documents/servlets/projects/StudentManagement/conf/Catalina/localhost/StudentManagement.xml]
+08-Feb-2024 23:58:06.456 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Feb-2024 23:58:06.474 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/Users/sumandey/Documents/servlets/projects/StudentManagement/conf/Catalina/localhost/StudentManagement.xml] has finished in [468] ms
+08-Feb-2024 23:58:06.475 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Feb-2024 23:58:06.481 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [532] milliseconds

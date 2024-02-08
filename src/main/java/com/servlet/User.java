@@ -13,7 +13,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-@WebServlet("/user")
+@WebServlet("/user/*")
 public class User extends HttpServlet {
     private final ObjectMapper objectMapper = new ObjectMapper();
     @Override
@@ -52,4 +52,53 @@ public class User extends HttpServlet {
             response.getWriter().write("Error reading or processing POST data");
         }
     }
+    @Override
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        try {
+            String idStr=request.getPathInfo();
+            int id;
+            if (idStr!=null){
+                id=Integer.parseInt(idStr.split("/")[1]);
+            }else {
+                response.getWriter().println("Invalid Id");
+                return;
+            }
+
+            UserDao dao=new UserDao();
+            com.model.User existingUser = dao.getUser(id);
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(request.getInputStream()));
+            StringBuilder requestBody = new StringBuilder();
+            String line;
+
+            // Read the request body line by line
+            while ((line = reader.readLine()) != null) {
+                requestBody.append(line);
+            }
+
+            System.out.println("Line" +requestBody);
+
+            // Map the request body to a Java object using Jackson
+            com.model.User updatedUserData = objectMapper.readValue(requestBody.toString(), com.model.User.class);
+
+            existingUser.setName(updatedUserData.getName());
+            existingUser.setEmail(updatedUserData.getEmail());
+            existingUser.setPhNo(updatedUserData.getPhNo());
+
+            Boolean success=dao.updateUser(existingUser);
+
+            if (success){
+                response.setContentType("application/json");
+                response.getWriter().println(objectMapper.writeValueAsString(existingUser));
+            }else {
+                response.getWriter().print("Unable to Update");
+            }
+
+        } catch (Exception e){
+            e.printStackTrace();
+            response.getWriter().write("Error reading or processing PUT data "+ e.getMessage());
+        }
+    }
+
 }
+
