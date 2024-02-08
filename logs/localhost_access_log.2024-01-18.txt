@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [18/Jan/2024:08:06:09 +0530] "GET /StudentManagement HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2024:08:06:09 +0530] "GET /StudentManagement/ HTTP/1.1" 200 52
+0:0:0:0:0:0:0:1 - - [18/Jan/2024:08:18:24 +0530] "POST /StudentManagement/user HTTP/1.1" 200 45
+0:0:0:0:0:0:0:1 - - [18/Jan/2024:08:18:45 +0530] "GET /Login/login.jsp HTTP/1.1" 404 683
+0:0:0:0:0:0:0:1 - - [18/Jan/2024:08:18:57 +0530] "GET /StudentManagement/user HTTP/1.1" 200 14
+0:0:0:0:0:0:0:1 - - [18/Jan/2024:08:26:34 +0530] "POST /StudentManagement/user HTTP/1.1" 200 45

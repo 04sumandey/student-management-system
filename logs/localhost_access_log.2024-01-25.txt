@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [25/Jan/2024:08:15:22 +0530] "GET /StudentManagement HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [25/Jan/2024:08:15:23 +0530] "GET /StudentManagement/ HTTP/1.1" 200 680
+0:0:0:0:0:0:0:1 - - [25/Jan/2024:08:15:42 +0530] "GET /StudentManagement/FormData HTTP/1.1" 200 99
+0:0:0:0:0:0:0:1 - - [25/Jan/2024:08:15:56 +0530] "POST /StudentManagement/FormData?name=suman&phonNo=9064635902&email=mdey@gmail.com HTTP/1.1" 405 753
+0:0:0:0:0:0:0:1 - - [25/Jan/2024:08:16:03 +0530] "GET /StudentManagement/FormData?name=suman&phonNo=9064635902&email=mdey@gmail.com HTTP/1.1" 200 116
+0:0:0:0:0:0:0:1 - - [25/Jan/2024:19:06:36 +0530] "GET /StudentManagement HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [25/Jan/2024:19:06:37 +0530] "GET /StudentManagement/ HTTP/1.1" 200 680
