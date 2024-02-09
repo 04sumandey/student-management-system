@@ -16,9 +16,35 @@ import java.io.InputStreamReader;
 @WebServlet("/user/*")
 public class User extends HttpServlet {
     private final ObjectMapper objectMapper = new ObjectMapper();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("login Success");
+        try {
+            String idStr=req.getPathInfo();
+            System.out.println("path: "+idStr);
+
+            int id;
+            if (idStr!=null){
+                id=Integer.parseInt(idStr.split("/")[1]);
+            }else {
+                resp.getWriter().println("Invalid Id");
+                return;
+            }
+
+            UserDao dao = new UserDao();
+
+            com.model.User user= dao.getUser(id);
+            if (user==null){
+                resp.getWriter().println("User does not exists");
+                return;
+            }
+
+            resp.setContentType("application/json");
+            resp.getWriter().println(objectMapper.writeValueAsString(user));
+
+        }catch (Exception e){
+
+        }
 
     }
 

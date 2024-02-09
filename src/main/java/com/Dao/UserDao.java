@@ -21,7 +21,7 @@ public class UserDao {
     protected Connection getConnection() {
         java.sql.Connection connection = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcpassword);
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
