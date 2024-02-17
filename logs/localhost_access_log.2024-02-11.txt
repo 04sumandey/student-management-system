@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:55:19 +0530] "GET /StudentManagement/user/8 HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:55:41 +0530] "GET /StudentManagement/user/8 HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:55:44 +0530] "GET /StudentManagement/user/8 HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:55:51 +0530] "POST /StudentManagement/user HTTP/1.1" 500 2445
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:56:34 +0530] "POST /StudentManagement/user HTTP/1.1" 500 2445
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:56:47 +0530] "POST /StudentManagement/user HTTP/1.1" 500 2445
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:56:50 +0530] "POST /StudentManagement/user HTTP/1.1" 500 2445
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:56:51 +0530] "POST /StudentManagement/user HTTP/1.1" 500 2445
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:56:52 +0530] "POST /StudentManagement/user HTTP/1.1" 500 2445
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:56:52 +0530] "POST /StudentManagement/user HTTP/1.1" 500 2445
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:56:53 +0530] "POST /StudentManagement/user HTTP/1.1" 500 2445
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:57:36 +0530] "POST /StudentManagement/user HTTP/1.1" 200 45
+0:0:0:0:0:0:0:1 - - [11/Feb/2024:23:59:27 +0530] "POST /StudentManagement/user HTTP/1.1" 200 45

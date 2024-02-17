@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:22:18:06 +0530] "POST /StudentManagement/user HTTP/1.1" 200 45
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:22:19:06 +0530] "PUT /StudentManagement/user/13 HTTP/1.1" 200 71
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:22:19:32 +0530] "DELETE /StudentManagement/user/13 HTTP/1.1" 200 49
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:22:19:37 +0530] "DELETE /StudentManagement/user/13 HTTP/1.1" 400 51
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:22:19:45 +0530] "DELETE /StudentManagement/user/13a HTTP/1.1" 200 63

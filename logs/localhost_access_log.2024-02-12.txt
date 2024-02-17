@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:00:00:08 +0530] "DELETE /StudentManagement/user/10a HTTP/1.1" 200 63
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:00:00:14 +0530] "DELETE /StudentManagement/user/10 HTTP/1.1" 200 49
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:00:00:20 +0530] "DELETE /StudentManagement/user/10 HTTP/1.1" 400 51
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:08:49:04 +0530] "GET /StudentManagement HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:08:49:05 +0530] "GET /StudentManagement/ HTTP/1.1" 200 680
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:08:49:05 +0530] "GET /favicon.ico HTTP/1.1" 404 683
